@@ -14,20 +14,19 @@
 
 #define ENABLE_GZIP 0
 
-int debug_level = DEFAULT_DEBUG_LEVEL;
-int max_flows = 0;
-int console_only = 0;
-int suppress_header = 0;
-int strip_nonprint = 0;
-int use_color = 0;
-u_int min_skip  = 1000000;
-bool opt_no_purge = false;
+extern int debug_level;
+extern int max_flows;
+extern int console_only;
+extern int suppress_header;
+extern int strip_nonprint;
+extern int use_color;
+extern u_int min_skip;
+extern bool opt_no_purge;
 
-const char *progname = 0;
-
+extern const char *progname;
 
 #ifdef HAVE_PTHREAD
-sem_t *semlock = 0;
+extern sem_t *semlock;
 #endif
 
 #include <string>
